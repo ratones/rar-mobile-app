@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="rar.dtic.rarapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RARApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.pages.VehiclesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pages.AddVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pages.PreferencesActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.pages.MainActivity"
             android:exported="false" />
